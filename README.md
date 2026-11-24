@@ -1,18 +1,22 @@
 # Taraaz
-English freelance finance desktop app built with PyQt6 and SQLite.
 
-Run in this directory with Python 3.10 or newer:
+Track a freelance project from the first billable hour to the final payment, in English or Persian.
 
-    python -m pip install -r requirements.txt
-    python app.py
+![Python 3.10+, PyQt6 and SQLite](docs/stack.svg)
 
-Use `python app.py --demo` for a temporary sample workspace.
+<img src="docs/preview.png" alt="Taraaz dashboard showing sample project balances" width="820">
 
-Choose a project currency when creating a contract. IRR uses whole rials. USD and EUR support cents. IRT preserves existing toman projects. Reports and CSV exports cover the selected currency only.
+## From contract to statement
 
-For hourly projects, enter a fixed rate, select the project and click Log time. Enter hours and minutes for each addition. Billable value is the cumulative minutes multiplied by the rate divided by 60, rounded to the nearest minor currency unit. The rate locks after time is logged. Payments and expenses are separate transactions. Estimated profit is billable value minus expenses. Net cash is payments minus expenses.
+- **Quote and track work.** Set a fixed fee or hourly rate. Log time, payments and expenses in IRR, IRT, USD or EUR.
+- **Follow up.** Keep dated CRM notes per project and get reminders for waiting projects while Taraaz is open.
+- **Settle up.** Review each client's balance by currency, export a PDF statement or send it through your Telegram bot.
 
-The normal database is taraaz.sqlite3 in the local Taraaz application data directory. Close the app before copying the database for backup.
-Use Settings to choose English or Persian and a light or dark theme. Preferences apply immediately and persist between sessions. In Transactions, search for a project by name or client, choose Payment or Expense, then enter the amount and date.
-Neon is also available in Settings. Transaction dates use the Solar Hijri calendar in both languages. SQLite stores the underlying date in ISO Gregorian format for compatibility and chronological sorting.
-Financial report → Client statement previews the selected customer and reporting currency, including project balances and payments. Save PDF or confirm Send via Telegram. In Settings enter a BotFather token and destination chat ID; the recipient must start the bot or add it to the destination group. Token is held in memory (or supplied via TARAAZ_BOT_TOKEN). Projects → CRM stores dated private notes. Waiting status triggers one local reminder per day while Taraaz is open, including on the next launch.
+## Try the demo
+
+```bash
+python -m pip install -r requirements.txt
+python app.py --demo
+```
+
+For your own projects, run `python app.py`. Records stay in a local SQLite database. Settings offers English and Persian, plus light, dark and neon themes.
