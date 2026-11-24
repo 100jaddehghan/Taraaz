@@ -1,0 +1,15 @@
+QWidget {background:#101023;color:#f0efff}
+QLabel {background:transparent}
+QFrame#hero {background:qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 DEEP,stop:1 DUSK);border:1px solid EDGE}
+QFrame#card,QTabWidget::pane,QTableWidget,QMenu {background:#191a31;border:1px solid #484362}
+QLabel#brand,QLabel#value {color:ACCENT}
+QLabel#muted,QLabel#light {color:#c2bfd8}
+QFrame#currencyStrip,QHeaderView::section,QTabBar::tab {background:#24223d;color:#d4cdef}
+QPushButton,QLineEdit,QDateEdit {background:#202039;color:#eeeaff;border:1px solid #635981}
+QPushButton#currency:checked,QTabBar::tab:selected {background:SECONDARY;color:#fff}
+QPushButton#primary {background:ACCENT;color:#102624;border:1px solid ACCENT}
+QPushButton:hover,QMenu::item:selected {background:#40345e;color:white}
+QTableWidget {alternate-background-color:#202036;selection-background-color:SECONDARY;selection-color:white}
+QTableWidget::item {border-color:#322e47}
+QLineEdit:focus,QDateEdit:focus,QPushButton:focus {border:1px solid ACCENT}
+QCalendarWidget QAbstractItemView {background:#191a31;color:#eeeaff;selection-background-color:SECONDARY;selection-color:white}

@@ -1,0 +1,12 @@
+QWidget {background:#12201f;color:#e1efea}
+QFrame#card,QTabWidget::pane,QTableWidget,QLineEdit,QDateEdit,QPushButton,QMenu {background:#1c302d;color:#e1efea;border-color:#405952}
+QTableWidget {alternate-background-color:#203733;selection-background-color:#41695c;selection-color:white}
+QHeaderView::section,QTabBar::tab {background:#263f38;color:#d6e9de}
+QTabBar::tab:selected,QPushButton#currency:checked {background:#36715e;color:white}
+QFrame#currencyStrip {background:#203731;border-color:#405952}
+QLabel#brand,QLabel#value {color:#b7ebc7}
+QLabel#muted,QPushButton#currency {color:#b6cec1}
+QLabel {background:transparent}
+QPushButton:hover,QMenu::item:selected {background:#335547}
+QPushButton#primary {background:#b6e995;color:#183127}
+QTableWidget::item {border-color:#314a41}
